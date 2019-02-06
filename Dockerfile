@@ -14,4 +14,4 @@ WORKDIR /app
 COPY package.json yarn.lock app.json ./
 RUN yarn --network-timeout 100000
 CMD adb connect $ADB_IP && \
-    expo start --android
+    yarn run android
